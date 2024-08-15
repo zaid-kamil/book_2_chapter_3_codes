@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ResponsiveWidget());
+  runApp(MyResponsiveWidget());
 }
 
-class ResponsiveWidget extends StatelessWidget {
+class MyResponsiveWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;

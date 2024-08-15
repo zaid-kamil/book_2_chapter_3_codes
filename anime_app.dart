@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'widgets/anime_card_widget.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyAnimeApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyAnimeApp extends StatelessWidget {
+  const MyAnimeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const MyHomeScreen(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class MyHomeScreen extends StatelessWidget {
+  const MyHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: HomeScreen(),
+    home: MyHomeScreen(),
     debugShowCheckedModeBanner: false,
   ));
 }
 
-class HomeScreen extends StatelessWidget {
+class MyHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +20,12 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                CupertinoPageRoute(builder: (context) => SecondScreen()),
+                CupertinoPageRoute(builder: (context) => MySecondScreen()),
               );
             },
             child: Text("Second Screen"),
           ),
-          SizedBox(width: 24),
+          SizedBox(width: 25),
         ],
       ),
       body: Container(
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SecondScreen()),
+                MaterialPageRoute(builder: (context) => MySecondScreen()),
               );
             },
             child: Text('Go to Second Screen'),
@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class SecondScreen extends StatelessWidget {
+class MySecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
